@@ -1,0 +1,32 @@
+doctype html
+html(lang='th')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= 'GAME3'
+        link(href='../css/random.css', rel="stylesheet")
+        link(href='../css/fontawesome-all.min.css', rel="stylesheet")
+        
+    body
+        //- .showrandom <i class="fas fa-gamepad"></i>
+        //- #game
+            #container.solution
+            #card
+                - for (var i = 1; i <= 9; ++i) {
+                    div(class='frontcard card-'+i,  data-id-card=i)
+                        img(src="images/card"+i+".jpg")
+                - }
+        
+        #random
+            
+            .box
+                
+                .inner-box
+                    img(src="images/logo_party.png",width=200)
+                    .num -----
+                    button.btnRandom Random
+                
+                
+        script(src='/js/jquery.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js")
+        script(src='/js/script2.js')

@@ -1,0 +1,94 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title GAME1
+    //- link(rel='stylesheet', href='css/bootstrap.min.css')
+    //- link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='../css/game1.css')
+    // new
+    style(type='text/css').
+      html{
+      margin-top:100px;
+      }
+      button{
+      color: #000;
+      height:20px;
+      font-size: 0.6em;
+      }
+      .container{
+      }
+      #log-mutiple{
+      position: absolute;
+      right:0;
+      top:0;
+      margin-right: 200px;
+      margin-top: 50px;
+      font-size: 1.3em;
+      }
+      #control{
+      position: absolute;
+      left:0;
+      top:0;
+      margin-left: 200px;
+      margin-top: 50px;
+      font-size: 1.5em;
+      }
+      .countdown{
+      font-size: 2.5em;
+      }
+      .bet{
+      font-size: 1.5em;
+      }
+      .name-team{
+      font-size: 2em;
+      }
+      .addvalue{
+      margin-top:20px;
+      font-size: 2em;
+      }
+      .sol-item li{
+      display:inline-block;
+      background:#fff;
+      color:#000;
+      padding:5px 10px;
+      border-radius:10px;
+      margin-left: 5px;
+      }
+      #scoreboard .inputv{
+      color: #000;
+      text-align: center;
+      }
+  body
+    .container
+      .row(style='text-align:center;')
+        #multiple.col-md-12
+          | -----
+      #control
+        div
+          //- button#startbt START
+          //- button#pausebt PAUSE
+          //- br
+          //- button#stopbt STOP
+          //- button#solvebt(onclick='return viewsol()') SOLVE
+      #log-mutiple
+        p รอบที่ 
+          span.round -
+        //- | เลขที่ผ่านมา
+        //- ul
+          //
+            li>x1.45</li>
+            <li>x1.30</li>
+            <li>x1.25</li
+      .row(style='text-align:center;')
+        .col-md-12
+          ul.sol-item(style='display:none')
+      #timer
+          span.countdown 0.0
+      br
+      br
+      div(style="text-align:center;color:#777;")
+          p S - START / P - PAUSE / R - STOP / B - SOLVE
+      br
+    script(src='/js/jquery.min.js')
+    script(src='/js/game1.js')

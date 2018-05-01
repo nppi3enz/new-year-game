@@ -1,0 +1,33 @@
+doctype html
+html(lang='th')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= 'Jade Template Engine Tutorial by SiamHTML'
+        link(href='../css/game2.css', rel="stylesheet")
+    body
+        #game(style='margin-top:100px;')
+            #container.solution
+            #card
+                - for (var i = 1; i <= 25; ++i) {
+                    div(class='frontcard admin card-'+i,  data-id-card=i) #{i}
+                - }
+
+        #control
+            button#resetBtn RESET
+            button#clearBtn CLEAR
+            button.load-img(data-url='pic1.jpg') LOAD QUIZ 1
+            button.load-img(data-url='pic2.jpg') LOAD QUIZ 2
+            button.load-img(data-url='pic3.jpg') LOAD QUIZ 3
+            button.load-img(data-url='pic4.jpg') LOAD QUIZ 4
+            button.load-img(data-url='pic5.jpg') LOAD QUIZ 5
+            p
+            input(type="text",name="cash",value="500")
+            button.plusHundred +
+            button.minusHundred -
+            button.sendCash SEND
+            div.status Welcome to Jigsaw
+                
+        script(src='/js/jquery.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js")
+        script(src='/js/script.js')

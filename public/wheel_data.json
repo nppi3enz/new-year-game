@@ -1,0 +1,40 @@
+{
+"colorArray":[ "#364C62", "#F1C40F", "#E67E22", "#E74C3C", "#ECF0F1", "#95A5A6", "#16A085", "#27AE60", "#2980B9", "#8E44AD", "#2C3E50", "#F39C12", "#D35400", "#C0392B", "#BDC3C7","#1ABC9C", "#2ECC71", "#E87AC2", "#3498DB", "#9B59B6", "#7F8C8D"],
+
+"segmentValuesArray" : [
+  {"type": "string", "value": "1", "win": true, "resultText": "1"},
+  {"type": "string", "value": "2", "win": true, "resultText": "2"},
+  {"type": "string", "value": "3", "win": true, "resultText": "3"},
+  {"type": "string", "value": "4", "win": true, "resultText": "4"},
+  {"type": "string", "value": "5", "win": true, "resultText": "5"}
+],
+
+  "svgWidth": 1024,
+  "svgHeight": 768,
+  "wheelStrokeColor": "#D0BD0C",
+  "wheelStrokeWidth": 18,
+  "wheelSize": 700,
+  "wheelTextOffsetY": 80,
+  "wheelTextColor": "#EDEDED",  
+  "wheelTextSize": "2.3em",
+  "wheelImageOffsetY": 40,
+  "wheelImageSize": 50,
+  "centerCircleSize": 360,
+  "centerCircleStrokeColor": "#F1DC15",
+  "centerCircleStrokeWidth": 12,
+  "centerCircleFillColor": "#EDEDED",
+  "segmentStrokeColor": "#E2E2E2",
+  "segmentStrokeWidth": 4,
+  "centerX": 512,
+  "centerY": 384,  
+  "hasShadows": false,
+  "numSpins": 99,
+  "spinDestinationArray":[],
+  "minSpinDuration":6,
+  "gameOverText":"THANK YOU FOR PLAYING SPIN2WIN WHEEL. COME AND PLAY AGAIN SOON!",
+  "invalidSpinText":"INVALID SPIN. PLEASE SPIN AGAIN.",
+  "introText":" ARE YOU <br><span style='color:#F282A9;'>READY?</span>",
+  "hasSound":true,
+  "gameId":"9a0232ec06bc431114e2a7f3aea03bbe2164f1aa",
+  "clickToSpin":true
+}

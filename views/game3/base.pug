@@ -1,0 +1,40 @@
+doctype html
+html(lang='th')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= 'GAME3'
+        link(href='../css/game3.css', rel="stylesheet")
+        link(href='../css/fontawesome-all.min.css', rel="stylesheet")
+        
+    body
+        .showrandom <i class="fas fa-gamepad"></i>
+        #game
+            #container.solution
+            #card
+                - for (var i = 1; i <= 9; ++i) {
+                    div(class='frontcard card-'+i,  data-id-card=i)
+                        img(src="images/card"+i+".jpg")
+                - }
+        #action(style='display:none')
+            #showinfo
+                .box
+                    .title 
+                    .command -
+                    div รางวัลที่ได้ 
+                    .box-prize ?
+                    .prize -
+                    .footer
+                        button(class='complete') <i class="fas fa-check-square"></i>
+                        button(class='close') <i class="fas fa-window-close"></i>
+        #random(style='display:none')
+            .box
+                .inner-box
+                    button.closeRandom <i class="fas fa-times-circle"></i>
+                    .num -----
+                    button.btnRandom Random
+                
+                
+        script(src='/js/jquery.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js")
+        script(src='/js/script2.js')

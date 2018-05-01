@@ -1,0 +1,23 @@
+doctype html
+html(lang='th')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= 'GAME2'
+        link(href='../css/game2.css', rel="stylesheet")
+        link(href='../css/fontawesome-all.min.css', rel="stylesheet")
+    body
+        #prize
+            .icon <i class="fas fa-money-bill-alt"></i>
+            .value 0
+        #game
+            #container.solution
+            #card
+                - for (var i = 1; i <= 25; ++i) {
+                    div(class='frontcard card-'+i,  data-id-card=i) 
+                        span #{i}
+                - }
+                
+        script(src='/js/jquery.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js")
+        script(src='/js/script.js')

@@ -1,0 +1,152 @@
+body {
+    background: #000;
+    background-image: url('../images/bgjig.jpg');
+    background-position-x: center;
+  }
+
+  #game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 40%; */
+    /* height: 50%; */
+    padding: 20px;  
+    background: #800;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  }
+
+  #container{
+      position: relative;
+  }
+
+  #container.solution{
+    background-image: url('../images/pic1.jpg');
+    display: block;
+    width: 600px;
+    height: 600px;
+    /* position: absolute; */
+  }
+  #card{
+        display: block;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+  }
+
+  .frontcard{
+      display: block;
+      font-size: 30px;
+      vertical-align: middle;
+      line-height: 118px;
+      width:118px;
+      height:118px;
+      background: #000;
+      border:1px solid #fff;
+      color: #fff;
+      position: absolute;
+  }
+  .frontcard.card-1{
+      top: 0;
+      left: 0;
+  }
+  .frontcard.card-2{
+    top: 0;
+    left: 120px;
+  }
+  .frontcard.card-3{
+    top: 0;
+    left: 240px;
+  }
+  .frontcard.card-4{
+    top: 0;
+    left: 360px;
+  }
+  .frontcard.card-5{
+    top: 0;
+    left: 480px;
+  }
+.frontcard.card-6{
+    top: 120px;
+    left: 0;
+}
+.frontcard.card-7{
+    top: 120px;
+    left: 120px;
+}
+.frontcard.card-8{
+    top: 120px;
+    left: 240px;
+}
+.frontcard.card-9{
+    top: 120px;
+    left: 360px;
+}
+.frontcard.card-10{
+    top: 120px;
+    left: 480px;
+}
+.frontcard.card-11{
+    top: 240px;
+    left: 0;
+}
+.frontcard.card-12{
+    top: 240px;
+    left: 120px;
+}
+.frontcard.card-13{
+    top: 240px;
+    left: 240px;
+}
+.frontcard.card-14{
+    top: 240px;
+    left: 360px;
+}
+.frontcard.card-15{
+    top: 240px;
+    left: 480px;
+}
+.frontcard.card-16{
+    top: 360px;
+    left: 0;
+}
+.frontcard.card-17{
+    top: 360px;
+    left: 120px;
+}
+.frontcard.card-18{
+    top: 360px;
+    left: 240px;
+}
+.frontcard.card-19{
+    top: 360px;
+    left: 360px;
+}
+.frontcard.card-20{
+    top: 360px;
+    left: 480px;
+}
+.frontcard.card-21{
+    top: 480px;
+    left: 0;
+}
+.frontcard.card-22{
+    top: 480px;
+    left: 120px;
+}
+.frontcard.card-23{
+    top: 480px;
+    left: 240px;
+}
+.frontcard.card-24{
+    top: 480px;
+    left: 360px;
+}
+.frontcard.card-25{
+    top: 480px;
+    left: 480px;
+}
